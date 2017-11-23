@@ -7,9 +7,11 @@ package org.shadowfest.telas;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import org.shadowfest.identificador.GerenciamentoDeFestas;
 
 /**
  * FXML Controller class
@@ -34,5 +36,29 @@ public class MenuController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    @FXML
+    protected void ChangeToCategoria(ActionEvent e){
+        System.out.println("*-*");
+       GerenciamentoDeFestas.changeScreen("Categoria");
+    }
+    
+    @FXML
+    protected void ChangeToFesta(ActionEvent e){
+        System.out.println("*-*");
+       GerenciamentoDeFestas.changeScreen("Festa");
+    }
+    
+    @FXML
+    protected void ChangeToIngresso(ActionEvent e){
+        System.out.println("*-*");
+       GerenciamentoDeFestas.changeScreen("Ingresso");
+    }
+    
+    @FXML
+    protected void ChangeToPontos(ActionEvent e){
+        System.out.println("*-*");
+       GerenciamentoDeFestas.changeScreen("Pontos");
+    }
     
 }

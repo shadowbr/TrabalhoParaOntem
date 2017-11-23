@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import org.shadowfest.identificador.GerenciamentoDeFestas;
 
 /**
@@ -22,6 +23,9 @@ public class CategoriaController implements Initializable {
 
     @FXML
     private Button ButtonCadastrarCategoria;
+    
+    @FXML
+    private TextField textNomeDCategoria;
 
     /**
      * Initializes the controller class.

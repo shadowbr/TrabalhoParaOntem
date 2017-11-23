@@ -7,11 +7,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.shadowfest.telas.MenuController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.shadowfest.telas.MenuController">
    <children>
-      <ImageView fitHeight="420.0" fitWidth="658.0" layoutY="-2.0">
+      <ImageView fitHeight="488.0" fitWidth="844.0" layoutX="-176.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../FotoFesta.jpg" />
+            <Image url="@../img/FotoFesta.jpg" />
          </image>
       </ImageView>
       <Text layoutX="234.0" layoutY="78.0" stroke="#fffbfb" strokeType="OUTSIDE" strokeWidth="3.0" text="ShadowFest">
@@ -19,9 +19,9 @@
             <Font name="System Italic" size="40.0" />
          </font>
       </Text>
-      <Button fx:id="ButtonIngresso" layoutX="268.0" layoutY="242.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Comprar Ingresso" textFill="#220202" />
-      <Button fx:id="ButtonFesta" layoutX="268.0" layoutY="201.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Cadastrar Festa" textFill="#220202" />
-      <Button fx:id="ButtonCategoria" layoutX="268.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Cadastrar Categoria" textFill="#220202" />
-      <Button fx:id="ButtonPontos" layoutX="268.0" layoutY="285.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Verificar Pontos" textFill="#220202" />
+      <Button fx:id="ButtonIngresso" layoutX="268.0" layoutY="242.0" mnemonicParsing="false" onAction="#ChangeToIngresso" prefHeight="25.0" prefWidth="135.0" text="Comprar Ingresso" textFill="#220202" />
+      <Button fx:id="ButtonFesta" layoutX="268.0" layoutY="201.0" mnemonicParsing="false" onAction="#ChangeToFesta" prefHeight="25.0" prefWidth="135.0" text="Cadastrar Festa" textFill="#220202" />
+      <Button fx:id="ButtonCategoria" layoutX="268.0" layoutY="164.0" mnemonicParsing="false" onAction="#ChangeToCategoria" prefHeight="25.0" prefWidth="135.0" text="Cadastrar Categoria" textFill="#220202" />
+      <Button fx:id="ButtonPontos" layoutX="268.0" layoutY="285.0" mnemonicParsing="false" onAction="#ChangeToPontos" prefHeight="25.0" prefWidth="135.0" text="Verificar Pontos" textFill="#220202" />
    </children>
 </AnchorPane>

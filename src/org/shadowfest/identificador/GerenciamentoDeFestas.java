@@ -7,6 +7,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 import javafx.stage.Stage;
+import org.shadowfest.telas.CategoriaController;
+import org.shadowfest.telas.FestaController;
+import org.shadowfest.telas.IngressoController;
+import org.shadowfest.telas.MenuController;
+import org.shadowfest.telas.PontosController;
 
 /**
  *
@@ -18,35 +23,31 @@ public class GerenciamentoDeFestas extends Application {
     private static Stage stage;
     
     private static Scene Menu;
-    private static Scene telaAluno;
-    private static Scene telaAdmin;
-    private static Scene cadasAdmin;
-    private static Scene cadasAluno;
-    private static Scene cadasProfessor;
-    private static Scene cadasCurso;
-    private static Scene cadasProva;
-    private static Scene cadasTurma;
-    private static Scene telaProfessor;
+    private static Scene Categoria;
+    private static Scene Ingresso;
+    private static Scene Festa;
+    private static Scene Pontos;
+   
     
    @Override
    public void  start (Stage primaryStage) throws Exception{
        stage = primaryStage;
        
-       Parent fxmlMenu  = FXMLLoader.load(getClass().getResource("Menu.fxml"));
+       Parent fxmlMenu  = FXMLLoader.load(MenuController.class.getResource("Menu.fxml"));
        Menu = new Scene(fxmlMenu, 600, 400);
        
-       Parent fxmlAluno  = FXMLLoader.load(getClass().getResource("TelaAluno.fxml"));
-       telaAluno = new Scene(fxmlAluno, 600, 400);
+       Parent fxmlCategoria  = FXMLLoader.load(CategoriaController.class.getResource("Categoria.fxml"));
+       Categoria = new Scene(fxmlCategoria, 600, 400);
        
-       Parent fxmlProfessor  = FXMLLoader.load(getClass().getResource("TelaProfessor.fxml"));
-       telaProfessor = new Scene(fxmlProfessor, 600, 400);
+       Parent fxmlFesta  = FXMLLoader.load(FestaController.class.getResource("Festa.fxml"));
+       Festa = new Scene(fxmlFesta, 600, 400);
        
-       Parent fxmlAdmin = FXMLLoader.load(getClass().getResource("TelaAdmin.fxml"));
-       telaAdmin = new Scene(fxmlAdmin, 600, 400);
+       Parent fxmlIngresso = FXMLLoader.load(IngressoController.class.getResource("Ingresso.fxml"));
+       Ingresso = new Scene(fxmlIngresso, 600, 400);
        
-       Parent fxmlCadasAluno  = FXMLLoader.load(getClass().getResource("TelaCadasAluno.fxml"));
-       cadasAluno = new Scene(fxmlCadasAluno, 600, 400);
-       
+       Parent fxmlPontos  = FXMLLoader.load(PontosController.class.getResource("Pontos.fxml"));
+       Pontos = new Scene(fxmlPontos, 600, 400);
+           
        primaryStage.setScene(Menu);
        primaryStage.show();
    }
@@ -57,20 +58,17 @@ public class GerenciamentoDeFestas extends Application {
        case "Menu":
            stage.setScene(Menu);
           break;
-       case "tAluno":
-            stage.setScene(telaAluno);
+       case "Categoria":
+            stage.setScene(Categoria);
             break;
-        case "tAdmin":
-            stage.setScene(telaAdmin);
+        case "Festa":
+            stage.setScene(Festa);
             break;
-        case "tProfessor":
-            stage.setScene(telaProfessor);
+        case "Ingresso":
+            stage.setScene(Ingresso);
             break;
-        case "tCadasAluno":
-            stage.setScene(cadasAluno);
-            break;
-         case "tCadasAdmin":
-            stage.setScene(cadasAdmin);
+        case "Pontos":
+            stage.setScene(Pontos);
             break;
        }
        }
