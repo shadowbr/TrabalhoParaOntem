@@ -20,7 +20,7 @@
             <Font name="System Italic" size="40.0" />
          </font>
       </Text>
-      <Button fx:id="ButtonCadastrarCategoria" layoutX="283.0" layoutY="197.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Cadastrar Categoria" textFill="#220202" />
+      <Button fx:id="ButtonCadastrarCategoria" layoutX="283.0" layoutY="197.0" mnemonicParsing="false" onAction="#ChangeToMenu" prefHeight="25.0" prefWidth="135.0" text="Cadastrar Categoria" textFill="#220202" />
       <Text layoutX="14.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe o nome da Categoria:">
          <font>
             <Font name="System Italic" size="20.0" />
