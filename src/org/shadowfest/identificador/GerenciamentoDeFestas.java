@@ -1,5 +1,6 @@
 package org.shadowfest.identificador;
 
+import java.util.List;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -27,7 +28,9 @@ public class GerenciamentoDeFestas extends Application {
     private static Scene Ingresso;
     private static Scene Festa;
     private static Scene Pontos;
-   
+    
+    public static List<Festas> festas;
+    public static List<Cliente> clientes;
     
    @Override
    public void  start (Stage primaryStage) throws Exception{

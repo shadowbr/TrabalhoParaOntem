@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import org.shadowfest.identificador.GerenciamentoDeFestas;
 
 /**
@@ -22,6 +23,8 @@ public class PontosController implements Initializable {
 
     @FXML
     private Button ButtonProcurar;
+    @FXML
+    private TextField textEmail;
 
     /**
      * Initializes the controller class.
@@ -31,7 +34,6 @@ public class PontosController implements Initializable {
         // TODO
     }    
     
-     @FXML
     protected void ChangeToMenu(ActionEvent e){
         System.out.println("*-*");
        GerenciamentoDeFestas.changeScreen("Menu");

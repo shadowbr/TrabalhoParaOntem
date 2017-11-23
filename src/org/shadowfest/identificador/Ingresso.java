@@ -8,5 +8,14 @@ poderá ser convertido em consumação*/
  * @author Lucas Sombra!
  */
 public class Ingresso {
+    private int codigo;
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
     
-}
+ }
