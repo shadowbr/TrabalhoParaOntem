@@ -9,6 +9,7 @@ poderá ser convertido em consumação*/
  */
 public class Ingresso {
     private int codigo;
+    private String festao;
 
     public int getCodigo() {
         return codigo;
@@ -16,6 +17,10 @@ public class Ingresso {
 
     public void setCodigo(int codigo) {
         this.codigo = codigo;
+    }
+
+    public void setFesta(String festao) {
+        this.festao = festao;
     }
     
  }

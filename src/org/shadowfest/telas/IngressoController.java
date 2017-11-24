@@ -15,6 +15,7 @@ import javafx.scene.control.TextField;
 import org.shadowfest.identificador.Arquivos;
 import org.shadowfest.identificador.Cliente;
 import org.shadowfest.identificador.GerenciamentoDeFestas;
+import org.shadowfest.identificador.Ingresso;
 
 /**
  * FXML Controller class
@@ -47,12 +48,15 @@ public class IngressoController implements Initializable {
      @FXML
     private void ChangeToMenu(ActionEvent e){
         Cliente c = new Cliente();
+        Ingresso i = new Ingresso();
         c.setNome(textNome.getText());
         c.setEmail(textNEmail.getText());
         c.setCpf(textCPF.getText());
         c.setSexo(textSexo.getText());
-        
-        //for ()
+ 
+       
+        GerenciamentoDeFestas.clientes.add(c);
+       Arquivos.salvarCliente(GerenciamentoDeFestas.clientes);
         
         System.out.println("*-*");
        GerenciamentoDeFestas.changeScreen("Menu");
